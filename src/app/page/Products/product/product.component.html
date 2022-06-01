@@ -1,0 +1,28 @@
+<h2 class='text-center pb-5'>Danh sách sản phẩm</h2>
+<nz-table #sortTable [nzData]="productList" nzTableLayout="fixed">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Gía sản phẩm</th>
+        <th>Ảnh sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Ngày nhập</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of productList, let i = index">
+        <td>{{i +1}}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.price }}</td>
+        <td>  <img src="{{ data.image }}" width="100%" height="100%" alt=""></td>
+        <td>{{ data.quantity }}</td>
+        <td>{{ data.createdAt }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="onHandleRemove(data.id!)"  >Remove</button>
+          <a class="btn btn-primary" routerLink="/product/edit/{{data.id}}">Update</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

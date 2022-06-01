@@ -1,0 +1,29 @@
+.logo {
+    height: 32px;
+    margin: 16px;
+    
+  }
+  a{
+      text-decoration: none;
+  }
+  nz-header {
+    background: #fff;
+    padding-bottom: 100px;
+  }
+
+  nz-content {
+    margin: 0 16px;
+  }
+  .inner-content {
+    padding-top: 20px;
+    background:#fff;
+    
+  }
+
+  nz-footer {
+    text-align: center;
+  }
+
+  nz-layout{
+      background: #fff;
+  }

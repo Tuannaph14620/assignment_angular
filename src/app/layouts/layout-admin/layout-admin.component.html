@@ -1,0 +1,32 @@
+<nz-layout nzWidth="100%">
+    <nz-sider  nzWidth="250px">
+      <div class="logo">
+          <img src="../../../../../img_real/RealMadrid_Official_Online_Store_COLOR_blacktext_510x_37d3cb70-f682-4b8a-83d4-f819439ba1e9_150x.webp" alt="">
+      </div>
+      <ul nz-menu nzTheme="dark" nzMode="inline">
+        <li nz-submenu nzTitle="Product" nzIcon="Product">
+          <ul>
+              <a routerLink="/admin/product/add"><li nz-menu-item>Thêm sản phẩm</li></a>
+              <a routerLink="/admin/product"><li nz-menu-item>Danh sách sản phẩm</li></a>
+            
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Category" nzIcon="Category">
+          <ul>
+              <a routerLink=""><li nz-menu-item>Thêm danh mục sản phẩm</li></a>
+              <a routerLink=""><li nz-menu-item>Danh sách danh mục sản phẩm</li></a>
+            
+            
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+    <nz-layout>
+      <nz-header><app-header-admin></app-header-admin></nz-header>
+      <nz-content>
+        <div class="inner-content"><router-outlet></router-outlet></div>
+      </nz-content>
+      <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
+    </nz-layout>
+  </nz-layout>
+

@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Product B ",
+      "price": 30,
+      "quantity": 30
+    },
+    {
+      "name": "ok",
+      "price": 22222,
+      "quantity": 23,
+      "image": "",
+      "createdAt": "",
+      "id": 3
+    },
+    {
+      "name": "ssssssss",
+      "price": 19999,
+      "quantity": 322323,
+      "image": "",
+      "createdAt": "2022-05-28T01:44:22.678Z",
+      "id": 4
+    },
+    {
+      "name": "ok ma",
+      "price": 232323,
+      "quantity": 23223,
+      "image": "http://res.cloudinary.com/dbpw1enlu/image/upload/v1653872312/l6iegyyrles4dhzpcmyk.jpg",
+      "createdAt": "2022-05-30T00:58:14.629Z",
+      "id": 5
+    }
+  ],
+  "category": [],
+  "users": [
+    {
+      "email": "anhtuans2783@gmail.com",
+      "password": "$2a$10$nUYsgd3AvEd7jKGFp7sBm.LDW0BPTpRhw3rSTFSDCZDZT5uMKGsMW",
+      "username": "RipSocola",
+      "createdAt": 1654014259138,
+      "id": 1
+    },
+    {
+      "email": "tuannaph14620@fpt.edu.vn",
+      "password": "$2a$10$PNhc.pzoNsXIIUNo5mlcee91wjmwUaPg37l3Z6fLlxYy1c4u0Sppa",
+      "username": "RipSocola",
+      "createdAt": 1654014296447,
+      "id": 2
+    }
+  ]
+}
