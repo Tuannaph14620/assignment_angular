@@ -6,6 +6,8 @@ import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.compon
 import { HomepageComponent } from './page/homepage/homepage.component';
 import { ProductAddComponent } from './page/Products/product-add/product-add.component';
 import { ProductComponent } from './page/Products/product/product.component';
+import { SkillListComponent } from './page/skill/skill-list/skill-list.component';
+import { SkillComponent } from './page/skill/skill/skill.component';
 import { SigninComponent } from './page/Users/signin/signin.component';
 import { SignupComponent } from './page/Users/signup/signup.component';
 import { AuthGuard } from './rules/auth.guard';
@@ -23,6 +25,9 @@ const routes: Routes = [
       { path: "product", component: ProductComponent },
       { path: "product/add", component: ProductAddComponent },
       { path: "product/edit/:id", component: ProductAddComponent },
+      { path: "skills", component: SkillListComponent},
+      { path: "skills/add", component: SkillComponent},
+      { path: "skills/edit/:id", component: SkillComponent}
     ]
   },
 

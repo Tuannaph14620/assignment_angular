@@ -29,6 +29,8 @@ import { SigninComponent } from './page/Users/signin/signin.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
 import { HeaderIndexComponent } from './components/header-index/header-index.component';
 import { FooterIndexComponent } from './components/footer-index/footer-index.component';
+import { SkillComponent } from './page/skill/skill/skill.component';
+import { SkillListComponent } from './page/skill/skill-list/skill-list.component';
 
 registerLocaleData(en);
 
@@ -44,7 +46,9 @@ registerLocaleData(en);
     SigninComponent,
     HomepageComponent,
     HeaderIndexComponent,
-    FooterIndexComponent
+    FooterIndexComponent,
+    SkillComponent,
+    SkillListComponent
 
   ],
   imports: [
