@@ -85,5 +85,31 @@
       "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850716/dmuzct1sxdkl120csbmq.png",
       "id": 10
     }
+  ],
+  "info": [
+    {
+      "name": "Nguyen Anh Tuan",
+      "address": "Building A, Residential Bao Nhan Dan Xuan Phuong, Xuan Phuong, Nam Tu Liem, Hanoi",
+      "birthday": "2002-03-16",
+      "email": "anhtuans2783@gmail.com",
+      "graduate": "not graduated",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654853575/zpcsb6m3vdqynaenrftn.jpg",
+      "majors": "Website Design",
+      "phone": 398861434,
+      "note": "I enjoy coding and the challenge of learning something new everyday. My goal is to pursue a career in the field of front-end development.",
+      "school": "FPT Polytechnic Practice College",
+      "course": "09/2020 - now",
+      "id": 1
+    }
+  ],
+  "project": [
+    {
+      "name": "Website store CLB  Manchester  City",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654855870/flx3hyscxitpmiimadpm.jpg",
+      "description": "S",
+      "language": "Taiwindcss, Angular, API",
+      "link": "S",
+      "id": 1
+    }
   ]
 }

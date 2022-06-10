@@ -21,7 +21,7 @@ export class SkillListComponent implements OnInit {
     this.skillService.getSkillList().subscribe(data => this.skillList = data);
   }
   onHandleRemove(id: number){
-    const action = window.confirm('Do you want to delete this product?')
+    const action = window.confirm('Do you want to delete this info?')
     if(action){
       this.skillService.removeSkill(id).subscribe(data =>{
         this.skillList = this.skillList.filter(item => item.id !== id)

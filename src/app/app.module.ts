@@ -31,7 +31,12 @@ import { HeaderIndexComponent } from './components/header-index/header-index.com
 import { FooterIndexComponent } from './components/footer-index/footer-index.component';
 import { SkillComponent } from './page/skill/skill/skill.component';
 import { SkillListComponent } from './page/skill/skill-list/skill-list.component';
-
+import { InfoComponent } from './page/info/info/info.component';
+import { InfoAddComponent } from './page/info/info-add/info-add.component';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { ProjectComponent } from './page/project/project/project.component';
+import { ProjectAddComponent } from './page/project/project-add/project-add.component';
+import { LayoutIndexComponent } from './layouts/layout-index/layout-index.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -48,7 +53,12 @@ registerLocaleData(en);
     HeaderIndexComponent,
     FooterIndexComponent,
     SkillComponent,
-    SkillListComponent
+    SkillListComponent,
+    InfoComponent,
+    InfoAddComponent,
+    ProjectComponent,
+    ProjectAddComponent,
+    LayoutIndexComponent
 
   ],
   imports: [
@@ -67,6 +77,7 @@ registerLocaleData(en);
     NzPageHeaderModule,
     NzDropDownModule,
     NzTagModule,
+    NzInputModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]

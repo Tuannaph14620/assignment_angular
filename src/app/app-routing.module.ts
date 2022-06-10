@@ -4,8 +4,12 @@ import { NotFoundError } from 'rxjs';
 import { AppComponent } from './app.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
+import { InfoAddComponent } from './page/info/info-add/info-add.component';
+import { InfoComponent } from './page/info/info/info.component';
 import { ProductAddComponent } from './page/Products/product-add/product-add.component';
 import { ProductComponent } from './page/Products/product/product.component';
+import { ProjectAddComponent } from './page/project/project-add/project-add.component';
+import { ProjectComponent } from './page/project/project/project.component';
 import { SkillListComponent } from './page/skill/skill-list/skill-list.component';
 import { SkillComponent } from './page/skill/skill/skill.component';
 import { SigninComponent } from './page/Users/signin/signin.component';
@@ -27,7 +31,13 @@ const routes: Routes = [
       { path: "product/edit/:id", component: ProductAddComponent },
       { path: "skills", component: SkillListComponent},
       { path: "skills/add", component: SkillComponent},
-      { path: "skills/edit/:id", component: SkillComponent}
+      { path: "skills/edit/:id", component: SkillComponent},
+      { path: "info" , component:InfoComponent},
+      { path: "info/add" , component:InfoAddComponent},
+      { path: "info/edit/:id" , component:InfoAddComponent},
+      { path: "project" , component: ProjectComponent},
+      { path: "project/add" , component: ProjectAddComponent},
+      { path: "project/edit/:id" , component:  ProjectAddComponent},
     ]
   },
 

@@ -1,0 +1,39 @@
+<h2 class='text-center pb-5'>Thông tin cá nhân</h2>
+<nz-table #sortTable [nzData]="infoList" nzTableLayout="fixed">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Birthday</th>
+        <th>Image</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>School</th>
+        <th>Majors</th>
+        <th>Graduation</th>
+        <th>Course</th>
+        <th>Note</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of infoList, let i = index">
+        <td>{{i +1}}</td>
+        <td>{{ data.name }}</td>
+        <td>{{ data.birthday }}</td>
+        <td>  <img src="{{ data.image }}" width="150px" height="150px" class="rounded-full" alt=""></td>
+        <td>0{{ data.phone }}</td>
+        <td>{{ data.address }}</td>
+        <td>{{ data.school }}</td>
+        <td>{{ data.majors }}</td>
+        <td>{{ data.graduate }}</td>
+        <td>{{ data.course}}</td>
+        <td>{{ data.note }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="onHandleRemove(data.id!)">Remove</button>
+          <a class="btn btn-primary" routerLink="/admin/info/edit/{{data.id}}">Update</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
+
