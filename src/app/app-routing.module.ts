@@ -13,12 +13,11 @@ import { AuthGuard } from './rules/auth.guard';
 
 const routes: Routes = [
   {
-    path: "", component: AppComponent, children: [
+    path: "", component: HomepageComponent, children: [
       { path: "signup", component: SignupComponent },
       { path: "signin", component: SigninComponent },
     ]
   },
-
   {
     path: "admin", component: LayoutAdminComponent, canActivate: [AuthGuard], children: [
       { path: "product", component: ProductComponent },

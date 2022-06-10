@@ -20,8 +20,8 @@
         <td>{{ data.quantity }}</td>
         <td>{{ data.createdAt }}</td>
         <td>
-          <button class="btn btn-danger" (click)="onHandleRemove(data.id!)"  >Remove</button>
-          <a class="btn btn-primary" routerLink="/product/edit/{{data.id}}">Update</a>
+          <button class="btn btn-danger" (click)="onHandleRemove(data.id!)">Remove</button>
+          <a class="btn btn-primary" routerLink="/admin/product/edit/{{data.id}}">Update</a>
         </td>
       </tr>
     </tbody>

@@ -23,10 +23,11 @@ export class ProductComponent implements OnInit {
   }
 
   onHandleRemove(id: number){
-    this.productService.removeProduct(id).subscribe(data =>{
-      this.productList = this.productList.filter(item => item.id !== id)
-    })
+    const action = window.confirm('Do you want to delete this product?')
+    if(action){
+      this.productService.removeProduct(id).subscribe(data =>{
+        this.productList = this.productList.filter(item => item.id !== id)
+      })
+    }
   }
-
-  
 }

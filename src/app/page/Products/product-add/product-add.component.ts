@@ -33,29 +33,32 @@ export class ProductAddComponent implements OnInit {
     const id = this.activatedRoute.snapshot.paramMap.get('id')
     if(id){
       this.productService.updateProduct(this.product).subscribe(data => {
-        this.router.navigateByUrl('/product')
+        this.router.navigateByUrl('/admin/product')
       })
     }
     else{
       this.productService.addProduct(this.product).subscribe(data => {
-        this.router.navigateByUrl('/product')
+        this.router.navigateByUrl('/admin/product')
       })
     }
   }
-
+  
   async onChangeGetImg(e: any) {
-    const file = e.target.files[0]
-    const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/dbpw1enlu/image/upload"
-    const formData = new FormData()
+    const file = e.target.files[0];
+  const CLOUDINARY_API = "https://api.cloudinary.com/v1_1/dl8w6p4sf/image/upload";
 
-    formData.append('file', file);
-    formData.append('upload_preset', "cyfbktyp");
-    const response = await axios.post(CLOUDINARY_API, formData, {
+  const formData = new FormData();
+
+  formData.append("file", file);
+  formData.append("upload_preset", "jovx8mjh");
+
+  // call api cloudinary
+
+  const response = await axios.post(CLOUDINARY_API, formData, {
       headers: {
-        "Content-Type": "application/form-data"
-      }
-    })
-    console.log(response.data.url);
+          "Content-Type": "application/form-data",
+      },
+  });
     this.product.image = response.data.url
   }
 }

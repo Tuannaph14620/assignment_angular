@@ -24,10 +24,11 @@ import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.compon
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 import { NzTagModule } from 'ng-zorro-antd/tag';
-import { CategoryComponent } from './page/Categories/category/category.component';
 import { SignupComponent } from './page/Users/signup/signup.component';
 import { SigninComponent } from './page/Users/signin/signin.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
+import { HeaderIndexComponent } from './components/header-index/header-index.component';
+import { FooterIndexComponent } from './components/footer-index/footer-index.component';
 
 registerLocaleData(en);
 
@@ -39,10 +40,11 @@ registerLocaleData(en);
     ProductComponent,
     ProductAddComponent,
     LayoutAdminComponent,
-    CategoryComponent,
     SignupComponent,
     SigninComponent,
-    HomepageComponent
+    HomepageComponent,
+    HeaderIndexComponent,
+    FooterIndexComponent
 
   ],
   imports: [
