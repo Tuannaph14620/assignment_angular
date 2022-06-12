@@ -1,21 +1,47 @@
-<app-header-index></app-header-index>
 <section class="banner">
     <div class="custom-container">
-        <div class="grid md:grid-cols-3 gap-8 mb-[70px]">
+        <div *ngFor="let data of infoList" class="grid md:grid-cols-3 gap-8 mb-[70px]">
             <div class="banner-content">
-                <h2 class="banner-content-title">Hi, I am Tuan, <br>
-                    Creative Technologist
+                <h2 class="banner-content-title">{{data.name}}, <br>
+                    {{data.majors}}
                 </h2>
-                <p class="banner-content-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                    amet
-                    sint.
-                    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p>
+                <p class="banner-content-description">{{data.note}}</p>
                 <a class="banner-content-button" href="#">Download
                     Resume</a>
             </div>
             <div class="banner-image">
-                <img class="banner-image-thumbnail" src="image/Ellipse 1.jpg" alt="">
+                <img class="banner-image-thumbnail" src="{{data.image}}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mb-[50px]">
+    <div class="custom-container">
+        <div class="text-center">
+            <p class="text-[52px] pt-3 pb-5 font-medium leading-[60px] ">About Me</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-[22px] ">
+            <div *ngFor="let data of infoList" class="bg-white p-[12px]">
+                <h3 class="font-bold text-[26px] pb-[17px]">Infomation</h3>
+                <div class="flex mb-[11px]">
+                    <span class="pr-[20px] text-[18px] ">{{data.birthday}}</span>
+                    <span>|</span>
+                    <span class=" text-[18px]  pl-[20px]">{{data.phone}}</span>
+                </div>
+                <li>{{data.website}}</li>
+                <li>{{data.email}}</li>
+                <li>{{data.address}}</li>
+
+                
+            </div>
+            <div *ngFor="let data of infoList" class="">
+                <h3 class="font-bold text-[26px] pb-[17px]">Education</h3>
+                <div class="flex mb-[11px]">
+                    <span class="pr-[20px] text-[18px] ">{{data.course}}</span>
+                    <span>|</span>
+                    <span class=" text-[18px]  pl-[20px]">{{data.school}}</span>
+                </div>
+                <li class="text-[16px]">{{data.graduate}}</li>
             </div>
         </div>
     </div>
@@ -23,32 +49,13 @@
 <!-- Recent posts -->
 <section class="recent-posts">
     <div class="custom-container">
-        <div class="flex justify-between items-center">
-            <p class="text-[22px] leading-[60px] ">Recent posts</p>
-            <a class="text-[16px] leading-[23.5px] text-blue-400 " href="">View all</a>
+        <div class="text-center">
+            <p class="text-[52px] pt-3 pb-5 font-medium leading-[60px] ">Skill</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-[22px] ">
-            <div class="bg-white p-[12px]">
-                <h3 class="font-bold text-[26px] pb-[17px]">Making a design system from scratch</h3>
-                <div class="flex mb-[11px]">
-                    <span class="pr-[20px] text-[18px] ">12 Feb 2020</span>
-                    <span>|</span>
-                    <span class=" text-[18px]  pl-[20px]">Design,Pattern</span>
-                </div>
-                <p class="text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-            </div>
-            <div class="bg-white p-[12px]">
-                <h3 class="font-bold text-[26px] pb-[17px]">Making a design system from scratch</h3>
-                <div class="flex mb-[11px]">
-                    <span class="pr-[20px] text-[18px] ">12 Feb 2020</span>
-                    <span>|</span>
-                    <span class=" text-[18px]  pl-[20px]">Design,Pattern</span>
-                </div>
-                <p class="text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <div class="grid md:grid-cols-5  gap-[22px] ">
+            <div *ngFor="let data of skillList" class="text-center ">
+                <div class=" mx-auto w-[100px] h-[100px]"><img class="w-full h-full" src="{{data.image}}" alt=""></div>
+                <h3 class="font-bold md:text-[18px] text-[14px] py-[17px]">{{data.name}}</h3>
             </div>
         </div>
     </div>
@@ -60,7 +67,8 @@
             <h2 class="text-[22px] md:text-left pt-[15px] pb-[22px] leading-[60px]">Featured works</h2>
         </div>
         <div class="md:flex gap-[17px]">
-            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt=""></div>           
+            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt="">
+            </div>
             <div class="basis-[76%]">
                 <h3 class="text-[30px] py-[17px] font-bold">Designing Dashboards</h3>
                 <div class="flex gap-[26px] mb-[17px]">
@@ -76,7 +84,8 @@
         </div>
         <hr class="my-[30px]">
         <div class="md:flex gap-[17px]">
-            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt=""></div>           
+            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt="">
+            </div>
             <div class="basis-[76%]">
                 <h3 class="text-[30px] py-[17px] font-bold">Designing Dashboards</h3>
                 <div class="flex gap-[26px] mb-[17px]">
@@ -92,7 +101,8 @@
         </div>
         <hr class="my-[30px]">
         <div class="md:flex gap-[17px]">
-            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt=""></div>           
+            <div class="basis-[24%]"><img class="w-full md:w-full md:h-[180px]" src="image/Rectangle 30.jpg" alt="">
+            </div>
             <div class="basis-[76%] mt-5">
                 <h3 class="text-[30px] font-bold">Designing Dashboards</h3>
                 <div class="flex gap-[26px] mb-[17px]">
@@ -108,4 +118,3 @@
         </div>
     </div>
 </section>
-<app-footer-index></app-footer-index>

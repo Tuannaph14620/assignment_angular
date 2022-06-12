@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundError } from 'rxjs';
-import { AppComponent } from './app.component';
 import { LayoutAdminComponent } from './layouts/layout-admin/layout-admin.component';
+import { LayoutIndexComponent } from './layouts/layout-index/layout-index.component';
 import { HomepageComponent } from './page/homepage/homepage.component';
 import { InfoAddComponent } from './page/info/info-add/info-add.component';
 import { InfoComponent } from './page/info/info/info.component';
@@ -19,9 +19,8 @@ import { AuthGuard } from './rules/auth.guard';
 
 const routes: Routes = [
   {
-    path: "", component: HomepageComponent, children: [
-      { path: "signup", component: SignupComponent },
-      { path: "signin", component: SigninComponent },
+    path: "", component: LayoutIndexComponent, children: [
+      {path: "", component: HomepageComponent}
     ]
   },
   {
@@ -29,18 +28,19 @@ const routes: Routes = [
       { path: "product", component: ProductComponent },
       { path: "product/add", component: ProductAddComponent },
       { path: "product/edit/:id", component: ProductAddComponent },
-      { path: "skills", component: SkillListComponent},
-      { path: "skills/add", component: SkillComponent},
-      { path: "skills/edit/:id", component: SkillComponent},
-      { path: "info" , component:InfoComponent},
-      { path: "info/add" , component:InfoAddComponent},
-      { path: "info/edit/:id" , component:InfoAddComponent},
-      { path: "project" , component: ProjectComponent},
-      { path: "project/add" , component: ProjectAddComponent},
-      { path: "project/edit/:id" , component:  ProjectAddComponent},
+      { path: "skills", component: SkillListComponent },
+      { path: "skills/add", component: SkillComponent },
+      { path: "skills/edit/:id", component: SkillComponent },
+      { path: "info", component: InfoComponent },
+      { path: "info/add", component: InfoAddComponent },
+      { path: "info/edit/:id", component: InfoAddComponent },
+      { path: "project", component: ProjectComponent },
+      { path: "project/add", component: ProjectAddComponent },
+      { path: "project/edit/:id", component: ProjectAddComponent },
     ]
   },
-
+  { path: "signup", component: SignupComponent },
+  { path: "signin", component: SigninComponent },
   { path: "**", component: NotFoundError }
 ];
 

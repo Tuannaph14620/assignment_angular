@@ -9,4 +9,6 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
 }
