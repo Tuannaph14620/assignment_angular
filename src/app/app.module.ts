@@ -37,6 +37,8 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { ProjectComponent } from './page/project/project/project.component';
 import { ProjectAddComponent } from './page/project/project-add/project-add.component';
 import { LayoutIndexComponent } from './layouts/layout-index/layout-index.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
+import { ProjectPageComponent } from './components/project-page/project-page.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -58,7 +60,9 @@ registerLocaleData(en);
     InfoAddComponent,
     ProjectComponent,
     ProjectAddComponent,
-    LayoutIndexComponent
+    LayoutIndexComponent,
+    AboutPageComponent,
+    ProjectPageComponent
 
   ],
   imports: [

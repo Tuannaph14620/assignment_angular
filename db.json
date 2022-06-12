@@ -99,16 +99,17 @@
       "note": "I enjoy coding and the challenge of learning something new everyday. My goal is to pursue a career in the field of front-end development.",
       "school": "FPT Polytechnic Practice College",
       "course": "09/2020 - now",
+      "website": "https://www.facebook.com/anhtuans2783/",
       "id": 1
     }
   ],
   "project": [
     {
       "name": "Website store CLB  Manchester  City",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654855870/flx3hyscxitpmiimadpm.jpg",
-      "description": "S",
-      "language": "Taiwindcss, Angular, API",
-      "link": "S",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655030576/mf0krsie5eaau2dm0pey.png",
+      "description": "Build a Manchester City FC store, with functions of purchase, payment, register, login, management",
+      "language": "Taiwindcss, Taiwindcss, API, Json-server",
+      "link": "https://assignment-react-redix.vercel.app/",
       "id": 1
     }
   ]
