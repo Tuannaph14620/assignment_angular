@@ -36,13 +36,13 @@
   ],
   "skills": [
     {
-      "name": "HTML",
+      "name": "Html5",
       "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654849115/wct9rcqgwqbvmefph68k.png",
       "id": 1
     },
     {
-      "name": "CSS3",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850398/fm8svndkgpam1yl9en1l.png",
+      "name": "Css3",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655032811/trcihfz22ircazukcggf.png",
       "id": 2
     },
     {
@@ -51,22 +51,22 @@
       "id": 3
     },
     {
-      "name": "React and Redux",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850520/bfocgoiq4tdbqqf6gxmv.png",
+      "name": "React(Redux-toolkit)",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655032745/vlrtxgao2eithhiidv4o.png",
       "id": 4
     },
     {
-      "name": "mySQL",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850559/gkblka8qu5hxugk9c5yl.png",
+      "name": "MySQL",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655032892/noizzvn0yeg02qxiusho.png",
       "id": 5
     },
     {
-      "name": "taiwindCSS",
+      "name": "TaiwindCSS",
       "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850596/pdxxlm0kztcdqn2e6vgm.png",
       "id": 6
     },
     {
-      "name": "GITHUD",
+      "name": "Githud",
       "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850619/deznkdispavxyizlml6g.png",
       "id": 7
     },
@@ -77,12 +77,12 @@
     },
     {
       "name": "StackOverFlow",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850679/kltj2ttw2sre8nkbbjeu.png",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655032988/afcxa3nckcnqxm9gowpp.png",
       "id": 9
     },
     {
       "name": "Bootstrap",
-      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1654850716/dmuzct1sxdkl120csbmq.png",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655032933/mlv9aqrwzqol1s9q90b7.png",
       "id": 10
     }
   ],

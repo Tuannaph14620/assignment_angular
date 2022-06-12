@@ -1,0 +1,9 @@
+<div class="text-center">
+    <p class="text-[52px] pt-3 pb-5 font-medium leading-[60px] ">Skill</p>
+</div>
+<div class="grid md:grid-cols-5  gap-[22px] ">
+    <div *ngFor="let data of  skillList" class="text-center ">
+        <div class=" mx-auto w-[80px] h-[80px]"><img class="w-full h-full object-cover" src="{{data.image}}" alt=""></div>
+        <h3 class="font-bold md:text-[18px] text-[14px] py-[17px]">{{data.name}}</h3>
+    </div>
+</div>

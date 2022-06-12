@@ -1,5 +1,5 @@
+<!-- banner header -->
 <section class="banner">
-    
     <div class="custom-container">
         <div *ngFor="let data of infoList" class="grid md:grid-cols-3 gap-8 mb-[70px]">
             <div class="banner-content">
@@ -16,28 +16,21 @@
         </div>
     </div>
 </section>
+<!-- about section -->
 <section class="mb-[50px]">
     <div class="custom-container">
         <app-about-page></app-about-page>
     </div>
 </section>
-<!-- Recent posts -->
+<!-- Skills section -->
 <section class="recent-posts">
     <div class="custom-container">
-        <div class="text-center">
-            <p class="text-[52px] pt-3 pb-5 font-medium leading-[60px] ">Skill</p>
-        </div>
-        <div class="grid md:grid-cols-5  gap-[22px] ">
-            <div *ngFor="let data of skillList" class="text-center ">
-                <div class=" mx-auto w-[100px] h-[100px]"><img class="w-full h-full" src="{{data.image}}" alt=""></div>
-                <h3 class="font-bold md:text-[18px] text-[14px] py-[17px]">{{data.name}}</h3>
-            </div>
-        </div>
+        <app-skill-page></app-skill-page>
     </div>
 </section>
-<!-- Features works -->
+<!-- Projects section -->
 <section class="feature-works">
     <div class="custom-container">
-     
+        <app-project-page></app-project-page>
     </div>
 </section>

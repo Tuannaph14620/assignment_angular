@@ -12,15 +12,15 @@ import { SkillService } from 'src/app/services/skill.service';
 export class HomepageComponent implements OnInit {
 
 infoList!: IInfo[]
-skillList!: ISkill[]
+
   constructor(
-    private infoService: InfoService,
-    private skillService: SkillService
+    private infoService: InfoService
+    
   ) { }
 
   ngOnInit(): void {
     this.getInfo()
-    this.getSkillList()
+
   }
 
   getInfo(){
@@ -29,10 +29,6 @@ skillList!: ISkill[]
     })
   }
 
-  getSkillList(){
-    this.skillService.getSkillList().subscribe(data => {
-      this.skillList = data;
-    })
-  }
+  
 
 }
