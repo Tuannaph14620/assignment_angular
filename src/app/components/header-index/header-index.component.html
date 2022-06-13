@@ -1,16 +1,18 @@
 
 <header class="custom-container">
-    <div class="">
+    <div class="w-full fixed top-0 right-0 bg-slate-500">
         <div class="flex justify-end">
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <!-- <ion-icon name="menu" (click)="Menu(this)"></ion-icon> -->
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
               </span>
         </div>
-        <div class="flex justify-end">
-            <ul class="md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 pb-[200px] md:pl-0 pl-7 top-[-400px] transition-all ease-in duration-200">
-                <li><a class="text-header hover:text-red-600" href="/works.html">Word</a></li>
-                <li><a class="text-header hover:text-red-600" href="/blog.html">Blog</a></li>
-                <li><a class="text-header hover:text-red-600" href="/contact.html">Contact</a></li>
+        <div class="flex justify-end mr-[203px]">
+            <ul class="md:flex md:items-center z-[-1] md:static absolute md:bg-white bg-black w-full right-0 md:w-auto md:py-0 py-4 pb-[200px] md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-200px] transition-all ease-in duration-500">
+                <li><a class="text-header hover:text-red-600" href="/">Home</a></li>
+                <li><a class="text-header hover:text-red-600" href="#about">About</a></li>
+                <li><a class="text-header hover:text-red-600" href="#skills">Skills</a></li>
+                <li><a class="text-header hover:text-red-600" href="#project">Projects</a></li>
+                <li><a class="text-header hover:text-red-600" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>

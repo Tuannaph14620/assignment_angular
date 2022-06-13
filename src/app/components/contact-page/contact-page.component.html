@@ -50,7 +50,7 @@
                         <div class="col-span-3 sm:col-span-2">
                             <label for="name" class="block text-lg text-gray-700"> Name </label>
                             <div class="mt-1 flex rounded-md ">
-                                <input required #name="ngModel" [(ngModel)]="contact.name" type="text" name="name" id="name"
+                                <input required ngForm #name="ngModel" [(ngModel)]="contact.name" type="text" name="name" id="name"
                                     class="bg-transparent py-2 mt-1 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md">
                             </div>
                             <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
@@ -62,8 +62,11 @@
                         <div class="col-span-3 sm:col-span-2">
                             <label for="email" class="block text-lg text-gray-700"> Email </label>
                             <div class="mt-1 flex rounded-md ">
-                                <input [(ngModel)]="contact.email" type="email" name="email" id="email"
+                                <input required ngForm #email="ngModel" [(ngModel)]="contact.email" type="email" name="email" id="email"
                                     class="bg-transparent   py-2 mt-1 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md">
+                            </div>
+                            <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
+                                Email id required
                             </div>
                         </div>
                     </div>

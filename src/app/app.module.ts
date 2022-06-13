@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +43,6 @@ import { SkillPageComponent } from './components/skill-page/skill-page.component
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
 import { ContactComponent } from './page/contact/contact/contact.component';
 import { ContactAddComponent } from './page/contact/contact-add/contact-add.component';
-registerLocaleData(en);
 
 @NgModule({
   declarations: [
@@ -89,9 +88,15 @@ registerLocaleData(en);
     NzPageHeaderModule,
     NzDropDownModule,
     NzTagModule,
-    NzInputModule
+    NzInputModule,
+    
+
+
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  providers: [
+    { provide: NZ_I18N, useValue: en_US},
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

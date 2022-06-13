@@ -1,7 +1,7 @@
 <!-- banner header -->
 <section class="banner">
     <div class="custom-container">
-        <div *ngFor="let data of infoList" class="grid md:grid-cols-3 gap-8 mb-[70px]">
+        <div *ngFor="let data of infoList" class="grid md:grid-cols-3 gap-8 ">
             <div class="banner-content">
                 <h2 class="banner-content-title">{{data.name}}, <br>
                     {{data.majors}}
@@ -17,25 +17,25 @@
     </div>
 </section>
 <!-- about section -->
-<section class="mb-[50px]">
+<section id="about" class="mb-[50px]">
     <div class="custom-container">
         <app-about-page></app-about-page>
     </div>
 </section>
 <!-- Skills section -->
-<section class="recent-posts">
+<section id="skills" class="recent-posts">
     <div class="custom-container">
         <app-skill-page></app-skill-page>
     </div>
 </section>
 <!-- Projects section -->
-<section class="feature-works">
+<section id="project" class="feature-works">
     <div class="custom-container">
         <app-project-page></app-project-page>
     </div>
 </section>
 <!-- contact section -->
-<section class="contact-works bg-sky-50 py-5">
+<section id="contact" class="contact-works bg-sky-50 py-5">
     <div class="custom-container">
        <app-contact-page></app-contact-page>
     </div>
