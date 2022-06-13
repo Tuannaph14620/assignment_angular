@@ -41,6 +41,8 @@ import { AboutPageComponent } from './components/about-page/about-page.component
 import { ProjectPageComponent } from './components/project-page/project-page.component';
 import { SkillPageComponent } from './components/skill-page/skill-page.component';
 import { ContactPageComponent } from './components/contact-page/contact-page.component';
+import { ContactComponent } from './page/contact/contact/contact.component';
+import { ContactAddComponent } from './page/contact/contact-add/contact-add.component';
 registerLocaleData(en);
 
 @NgModule({
@@ -66,7 +68,9 @@ registerLocaleData(en);
     AboutPageComponent,
     ProjectPageComponent,
     SkillPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ContactComponent,
+    ContactAddComponent
 
   ],
   imports: [

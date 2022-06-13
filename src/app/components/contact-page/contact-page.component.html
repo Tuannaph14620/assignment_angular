@@ -43,15 +43,18 @@
     </div>
     <div class="md:col-span-2">
         <h3 class="text-2xl font-medium leading-6 pb-4 text-gray-900">Contact Forms</h3>
-        <form action="#" method="POST">
+        <form (ngSubmit)="onSubmit()" #formAdd="ngForm"  action="#" method="POST">
             <div class="sm:rounded-md sm:overflow-hidden">
                 <div class="space-y-6">
                     <div class="grid grid-cols-2 gap-6">
                         <div class="col-span-3 sm:col-span-2">
                             <label for="name" class="block text-lg text-gray-700"> Name </label>
                             <div class="mt-1 flex rounded-md ">
-                                <input type="text" name="name" id="name"
+                                <input required #name="ngModel" [(ngModel)]="contact.name" type="text" name="name" id="name"
                                     class="bg-transparent py-2 mt-1 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md">
+                            </div>
+                            <div *ngIf="name.invalid && name.touched" class="alert alert-danger">
+                                Name id required
                             </div>
                         </div>
                     </div>
@@ -59,16 +62,16 @@
                         <div class="col-span-3 sm:col-span-2">
                             <label for="email" class="block text-lg text-gray-700"> Email </label>
                             <div class="mt-1 flex rounded-md ">
-                                <input type="email" email="email" id="email"
+                                <input [(ngModel)]="contact.email" type="email" name="email" id="email"
                                     class="bg-transparent   py-2 mt-1 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md">
                             </div>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-6">
                         <div class="col-span-3 sm:col-span-2">
-                            <label for="Subjects" class="block text-lg text-gray-700"> Subjects </label>
+                            <label for="subject" class="block text-lg text-gray-700"> Subject </label>
                             <div class="mt-1 flex rounded-md ">
-                                <input type="text" Subjects="Subjects" id="Subjects" placeholder="Optional"
+                                <input [(ngModel)]="contact.subject" type="text" name="subject" id="subject" placeholder="Optional"
                                     class="bg-transparent pl-2  mt-1 py-2 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md">
                             </div>
                         </div>
@@ -76,7 +79,7 @@
                     <div>
                         <label for="messages" class="block text-lg text-gray-700"> Messages </label>
                         <div class="mt-1">
-                            <textarea id="messages" name="messages" rows="7"
+                            <textarea [(ngModel)]="contact.message" id="messages" name="messages" rows="7"
                                 class="bg-transparent   mt-1 block w-full sm:text-sm border-[2px] border-gray-700 rounded-md"></textarea>
                         </div>
                     </div>
