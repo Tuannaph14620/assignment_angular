@@ -111,6 +111,14 @@
       "language": "Taiwindcss, Taiwindcss, API, Json-server",
       "link": "https://assignment-react-redix.vercel.app/",
       "id": 1
+    },
+    {
+      "name": "Fortfolio Profile",
+      "image": "http://res.cloudinary.com/dl8w6p4sf/image/upload/v1655167413/jl1ofxfbdoiol4eh5r6d.png",
+      "description": "Application profile website",
+      "language": "Angular, taiwindcss, callAPI",
+      "link": "https://fortfolio-eight.vercel.app",
+      "id": 2
     }
   ],
   "contact": [
@@ -120,13 +128,6 @@
       "message": "Tối qua bạn tuyệt vời lắm",
       "subject": "",
       "id": 1
-    },
-    {
-      "name": "",
-      "email": "",
-      "message": "",
-      "subject": "",
-      "id": 2
     }
   ]
 }

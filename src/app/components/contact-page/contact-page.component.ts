@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IContact } from 'src/app/model/contact';
 import { IInfo } from 'src/app/model/info';
@@ -20,7 +21,6 @@ export class ContactPageComponent implements OnInit {
   infoList!: IInfo[]
   constructor(
     private contactService: ContactService,
-    private router: Router,
     private infoService: InfoService
   ) { }
   ngOnInit(): void {
